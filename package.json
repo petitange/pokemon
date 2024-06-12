@@ -1,0 +1,24 @@
+{
+  "name": "react-express-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "backend": "npm run dev -w backend",
+    "frontend": "npm run dev -w frontend",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "test:backend": "npm test -w backend",
+    "test:frontend": "npm test -w frontend"
+  },
+  "author": "dstamenkovic",
+  "license": "ISC",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "concurrently": "^8.2.2",
+    "react-bootstrap": "^2.10.2"
+  }
+}
